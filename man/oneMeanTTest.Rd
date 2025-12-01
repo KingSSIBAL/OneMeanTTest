@@ -4,7 +4,7 @@
 \alias{oneMeanTTest}
 \title{One-Sample t-Test with Wallace Critical Values and Hastings P-Values}
 \usage{
-oneMeanTTest(x, mu, ha, data, alpha = 0.05, plot = TRUE)
+oneMeanTTest(x, mu, ha, alpha, data, plot = TRUE)
 }
 \arguments{
 \item{x}{Character string. Name of the numeric column in \code{data} to test.}
@@ -14,9 +14,9 @@ oneMeanTTest(x, mu, ha, data, alpha = 0.05, plot = TRUE)
 \item{ha}{Character string. Alternative hypothesis. One of "less" (H1: mu < mu0),
 "greater" (H1: mu > mu0), or "not equal" (H1: mu != mu0).}
 
-\item{data}{Data frame containing the column specified in \code{x}.}
+\item{alpha}{Numeric. Significance level (0 < alpha < 1). Must be explicitly provided.}
 
-\item{alpha}{Numeric. Significance level (0 < alpha < 1). Default is 0.05.}
+\item{data}{Data frame containing the column specified in \code{x}.}
 
 \item{plot}{Logical. If TRUE (default), display diagnostic plots: Q-Q plot, histogram
 with normal curve, and boxplot.}
@@ -61,7 +61,8 @@ set.seed(181)
 earnings_data <- data.frame(
   Earnings = round(rnorm(50, mean = 65, sd = 20), 0)
 )
-result <- oneMeanTTest("Earnings", mu = 75, ha = "less", data = earnings_data)
+result <- oneMeanTTest("Earnings", mu = 75, ha = "less", 
+                       alpha = 0.05, data = earnings_data)
 print(result)
 
 # Example 2: Test scores (check if above 70)
@@ -69,7 +70,8 @@ set.seed(456)
 scores <- data.frame(
   Score = round(runif(40, min = 50, max = 95), 1)
 )
-oneMeanTTest("Score", mu = 70, ha = "greater", data = scores, plot = FALSE)
+oneMeanTTest("Score", mu = 70, ha = "greater", 
+             alpha = 0.05, data = scores, plot = FALSE)
 
 # Example 3: Temperature readings (two-tailed test)
 temp_data <- data.frame(
@@ -77,6 +79,6 @@ temp_data <- data.frame(
                   98.5, 98.3, 98.8, 98.1, 98.6)
 )
 oneMeanTTest("Temperature", mu = 98.6, ha = "not equal", 
-             data = temp_data, alpha = 0.05)
+             alpha = 0.05, data = temp_data)
 
 }
