@@ -35,8 +35,5 @@
 #' \code{# View results}
 #' \code{print(result)}
 #'
-#' @docType package
-#' @name OneMeanDream-package
-#' @aliases OneMeanDream
-#' @keywords package
-NULL
+#' @keywords internal
+"_PACKAGE"
