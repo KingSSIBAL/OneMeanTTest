@@ -1,6 +1,6 @@
 Package: OneMeanDream
 Title: Enhanced One-Sample t-Test with Diagnostics and Approximations
-Version: 0.1.2
+Version: 0.1.3
 Authors@R: 
     c(
       person("Arianna", "Tagulinao", role = "aut"),
