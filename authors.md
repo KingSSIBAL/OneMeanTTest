@@ -20,7 +20,7 @@
 
 - **Zan Eros Policarpio**. Author.
 
-- **Reijel Agub**. Author, maintainer.
+- **[Reijel Agub](mailto:rcagub@up.edu.ph)**. Author, maintainer.
 
 ## Citation
 
