@@ -1,0 +1,9 @@
+pandoc: 3.1.11
+pkgdown: 2.2.0
+pkgdown_sha: ~
+articles:
+  introduction: introduction.html
+last_built: 2025-12-02T05:53Z
+urls:
+  reference: https://kingssibal.github.io/OneMeanDream/reference
+  article: https://kingssibal.github.io/OneMeanDream/articles

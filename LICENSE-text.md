@@ -1,0 +1,4 @@
+# License
+
+    YEAR: 2025
+    COPYRIGHT HOLDER: Arianna Tagulinao, Cindy Barcena, Francesca Anne Baclig, Josiah Tan, Junel Rey, Keano Pastrana, Matt Andrei Miclat, Mica Gonzales, Reijel Agub, Zan Eros Policarpio

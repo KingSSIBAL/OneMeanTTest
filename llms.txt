@@ -1,0 +1,20 @@
+Performs one-sample t-tests using Wallace critical value approximation
+and Hastings p-value approximation. Includes comprehensive assumption
+checks (normality via Shapiro-Wilk, outlier detection) and diagnostic
+plots.
+
+# Package index
+
+## All functions
+
+- [`oneMeanTTest()`](https://kingssibal.github.io/OneMeanDream/reference/oneMeanTTest.md)
+  : One-Sample t-Test with Wallace Critical Values and Hastings P-Values
+- [`print(`*`<oneMeanTTest>`*`)`](https://kingssibal.github.io/OneMeanDream/reference/print.oneMeanTTest.md)
+  : Print Method for oneMeanTTest Objects
+
+# Articles
+
+### All vignettes
+
+- [Getting Started with
+  OneMeanDream](https://kingssibal.github.io/OneMeanDream/articles/introduction.md):
