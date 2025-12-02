@@ -30,3 +30,4 @@ Suggests:
     rmarkdown
 VignetteBuilder: knitr
 Keywords: htest, t-test, approximation, diagnostics
+URL: https://kingssibal.github.io/OneMeanDream/

@@ -1,8 +1,8 @@
 ---
-title: "introduction"
+title: "Getting Started with OneMeanDream"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{introduction}
+  %\VignetteIndexEntry{Getting Started with OneMeanDream}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -15,5 +15,5 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(OneMeanTTest)
+library(OneMeanDream)
 ```
